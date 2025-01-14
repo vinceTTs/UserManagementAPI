@@ -1,20 +1,22 @@
 ###
 GET http://localhost:5209/api/Users/
 ###
-GET http://localhost:5209/api/Users/1
+GET http://localhost:5209/api/Users/0
 ###
 POST http://localhost:5209/api/Users/
 Content-Type: application/json
 
 {
-    "name": "Alice Johnson"
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com"
 }
 ###
-PUT http://localhost:5209/api/Users/1
+PUT http://localhost:5209/api/Users/0
 Content-Type: application/json
 
 {
-    "name": "John Doe Updated"
+    "name": "John Doe Updated",
+    "email": "john.doe.updated@example.com"
 }
 ###
-DELETE http://localhost:5209/api/Users/1
+DELETE http://localhost:5209/api/Users/0

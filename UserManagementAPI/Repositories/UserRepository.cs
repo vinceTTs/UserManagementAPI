@@ -22,6 +22,7 @@ namespace UserManagementAPI.Repositories
             if (index >= 0 && index < _users.Count)
             {
                 _users[index].Name = user.Name;
+                _users[index].Email = user.Email;
             }
         }
 
